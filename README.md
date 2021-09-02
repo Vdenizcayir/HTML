@@ -1,2 +1,2 @@
 # War_Game
-Python Tabanlı Programlama Oyunu
+Python Based Programming Game
