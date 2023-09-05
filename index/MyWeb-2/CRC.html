@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>CRC</title>
+    <link rel="stylesheet" href="css/CRC.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+
+</head>
+<body>
+ <header>
+
+ </header>
+
+
+ <section class="CRC">
+    <div class="CRC_8H2F">
+        <h2>CRC8H2F</h2>
+        <h3>Specification of CRC Routines - AUTOSAR</h3>
+        <p>Döngüsel artıklık kontrolü (CRC), dijital verilerdeki hataları tespit etmek için kullanılan bir tekniktir. 
+        Bir tür sağlama toplamı olarak CRC, bir dosyanın veya daha büyük veri kümesinin oluşturulmasına dayalı olarak sabit uzunlukta bir
+         veri kümesi üretir. Kullanımı açısından CRC, dijital telekomünikasyon ağlarında ve sabit disk sürücüleri gibi
+          depolama aygıtlarında yaygın olarak kullanılan ham bilgisayar verilerinde kazara yapılan değişiklikleri tespit 
+          eden bir karma işlevidir.</p>
+          <p>AUTOSAR'ın yayınlamış olduğu döküman içeriğinde "8H2F" parametrelendirmesine
+            göre CRC işleminde gereken bilgiler tablo halinde paylaşılmıştır.
+          </p>
+          <p>AUTOSAR Dökümanına <a href="http://www.google.com" target="_blank" >buradan</a> ulaşabilirsiniz :)</p>
+         
+        <div class="container">
+          <table>
+            <tr>
+                <td>Service Name</td>
+                <td>Crc_CalculateCRC8H2F</td>
+                
+            </tr>
+            <tr>
+                <td>Syntax</td>
+                <td>uint8 Crc_CalculateCRC8H2F (
+                    const uint8* Crc_DataPtr,
+                    uint32 Crc_Length,
+                    uint8 Crc_StartValue8H2F,
+                    boolean Crc_IsFirstCall
+                    )</td>
+                    
+            </tr>
+
+            <tr>
+                <td>Service ID [hex]</td>
+                <td>0x05</td>
+            </tr>
+
+            <tr>
+                <td>Sync/Async</td>
+                <td>Crc_DataPtr</td>
+            </tr>
+
+            <tr>
+                <td>Reentrancy</td>
+                <td>Reentrant</td>
+            </tr>
+
+            <tr>
+                <td>Parameters (in)</td>
+                <td>
+                    Crc_DataPtr = Pointer to start address of data block to be calculated <br><br>
+                    Crc_Length = Length of data block to be calculated in bytes. <br><br>
+                    Crc_StartValue8H2F = Start value when the algorithm starts. <br><br>
+                    Crc_IsFirstCall = TRUE: First call in a sequence or individual CRC calculation; start
+                    from initial value, ignore Crc_StartValue8H2F. FALSE:
+                    Subsequent call in a call sequence; Crc_StartValue8H2F is
+                    interpreted to be the return value of the previous function call.
+                </td>
+            </tr>
+
+            <tr>
+                <td>Parameters (inout)</td>
+                <td>None</td>
+            </tr>
+            <tr>
+                <td>Parameters (out) </td>
+                <td>None</td>
+            </tr>
+
+            <tr>
+                <td>Return value</td>
+                <td>uint8  | 8 bit result of CRC calculation</td>
+            </tr>
+
+            <tr>
+                <td>Description</td>
+                <td>This service makes a CRC8 calculation with the Polynomial 0x2F on Crc_Length</td>
+            </tr>
+
+            <tr>
+                <td>Available via </td>
+                <td>Crc.h
+                </td>
+            </tr>
+        </table>
+        </div>
+    </div>
+
+</section>
+
+<section class="How_to">
+    <div class="work">
+        <h2>CRC Nasıl Çalışır??</h2>
+    </div>
+</section>
+
+
+
+
+<section class="buble">
+ <div class="container">
+    <div class="bubbles">
+        <span style="--i:11;"></span>
+        <span style="--i:12;"></span>
+        <span style="--i:24;"></span>
+        <span style="--i:10;"></span>
+        <span style="--i:14;"></span>
+        <span style="--i:23;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:16;"></span>
+        <span style="--i:19;"></span>
+        <span style="--i:20;"></span>
+        <span style="--i:22;"></span>
+        <span style="--i:25;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:21;"></span>
+        <span style="--i:15;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:26;"></span>
+        <span style="--i:17;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:28;"></span>
+        <span style="--i:11;"></span>
+        <span style="--i:12;"></span>
+        <span style="--i:24;"></span>
+        <span style="--i:10;"></span>
+        <span style="--i:14;"></span>
+        <span style="--i:23;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:16;"></span>
+        <span style="--i:19;"></span>
+        <span style="--i:20;"></span>
+        <span style="--i:22;"></span>
+        <span style="--i:25;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:21;"></span>
+        <span style="--i:15;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:26;"></span>
+        <span style="--i:17;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:28;"></span>
+        <span style="--i:11;"></span>
+        <span style="--i:12;"></span>
+        <span style="--i:24;"></span>
+        <span style="--i:10;"></span>
+        <span style="--i:14;"></span>
+        <span style="--i:23;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:16;"></span>
+        <span style="--i:19;"></span>
+        <span style="--i:20;"></span>
+        <span style="--i:22;"></span>
+        <span style="--i:25;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:21;"></span>
+        <span style="--i:15;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:26;"></span>
+        <span style="--i:17;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:28;"></span>         
+    </div>
+ </div>
+</section>
+
+
+
+ 
+
+ 
+
+</body>
+</html>

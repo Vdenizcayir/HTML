@@ -1,0 +1,129 @@
+@import url('https://fontsgoogleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+margin: 20;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+border: none;
+outline: none;
+scroll-behavior: smooth;
+font-family: 'Lato';
+}
+
+body
+{
+    min-height: 100vh;
+    background: #0c192c;
+}
+
+
+.container
+{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+}
+.bubbles
+{
+    position:relative;
+    display: flex;
+}
+
+.bubbles span
+{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #4fc3dc;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fc3dc44,
+    0 0 50px #4fc3dc,
+    0 0 100px #4fc3dc;
+    animation:animate 15s linear infinite;
+    animation-duration: calc(125s / var(--i));
+}
+
+.bubbles span:nth-child(even)
+{
+    background: #ff2d75;
+    box-shadow: 0 0 0 10px #ff2d7544,
+    0 0 50px #ff2d75,
+    0 0 100px #ff2d75;
+}
+
+@keyframes animate 
+{
+    0%{
+        transform: translateY(100vh) scale(0);
+    }
+    100%{
+        transform: translateY(-10vh) scale(1);
+    }
+}
+
+.CRC
+{
+    
+    position: relative;
+    min-height: 100vh;
+    background: #0e1a2e;
+    
+}
+.CRC .CRC_8H2F 
+{
+    width: auto;
+    height: 100%;
+    text-align: center;
+    color: #FFF;
+    font-size: 25px;
+    
+}
+
+.CRC .CRC_8H2F p
+{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #FFF;
+    font-size: 19px;
+}
+
+.CRC .CRC_8H2F tr
+{
+    width: 800px;
+    margin: auto;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    border: 5px solid #ffffff;
+    border-collapse: inherit;
+
+}
+
+table {
+    height: auto;
+    border-collapse: separate;
+    width: 1000px; /* İstenilen tablo genişliği */
+    height: 200px;
+}
+
+table, th, td {
+    border: 1px solid white;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+.CRC .CRC_8H2F .container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh; /* Sayfa yüksekliği kadar hizalama */
+    
+}
